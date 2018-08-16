@@ -20,19 +20,19 @@ namespace ExerciseOne
             decimal depositAmount = decimal.Parse(Console.ReadLine());
             Console.WriteLine($"Adding {depositAmount:C} to account1 balance\n");
             account1.Deposit(depositAmount);
-            Console.WriteLine($"{account1.Name}'s balance is: {account1.Balance:C}");
+            Console.WriteLine($"{account1.Name}'s initial balance is: {account1.Balance:C}");
 
             Console.Write("\nEnter deposit amount for account2: ");
             depositAmount = decimal.Parse(Console.ReadLine());
             Console.WriteLine($"Adding {depositAmount:C} to account2 balance\n");
             account2.Deposit(depositAmount);
-            Console.WriteLine($"{account2.Name}'s balance is: {account2.Balance:C}");
+            Console.WriteLine($"{account2.Name}'s initial balance is: {account2.Balance:C}");
 
             Console.Write("\nEnter withdrawal amount for account2: ");
             decimal withdrawalAmount = decimal.Parse(Console.ReadLine());
             Console.WriteLine($"Withdrawing {depositAmount:C} from account2 balance\n");
             account2.Withdraw(withdrawalAmount);
-            Console.WriteLine($"{account2.Name}'s balance is: {account2.Balance:C}");
+            Console.WriteLine($"{account2.Name}'s initial balance is: {account2.Balance:C}");
             Console.ReadLine();
         }
     }
